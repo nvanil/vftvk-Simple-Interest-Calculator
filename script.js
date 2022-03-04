@@ -1,6 +1,13 @@
 function compute()
 {
     var principal = document.getElementById("principal").value;
+    
+    var pal = parseInt(principal);
+    
+    if ( pal > 0 )
+    
+    {
+    
     var rate = document.getElementById("rate").value;
     var years = document.getElementById("years").value;
 
@@ -16,7 +23,11 @@ function compute()
     ",\<br\>You will receive an amount of "+amount +
     ",\<br\>in the year "+year+"\<br\>"
     
-    
+    }
+    else
+    {
+        alert(" Please enter an amount greater than zero for Amount" );
+    }
 }
 
 function updateRate() 
