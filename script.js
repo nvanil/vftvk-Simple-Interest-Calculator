@@ -10,7 +10,6 @@ function compute()
         
         
     var rate = document.getElementById("rate").value;
-        rate.style.color="yellow";
         
     var years = document.getElementById("years").value;
 
