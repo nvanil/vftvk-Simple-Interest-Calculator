@@ -11,13 +11,13 @@ function compute()
     
     var year = new Date().getFullYear()+parseInt(years);
 
-    if ( principal !== null)
-    {
+    if ( principal > 0 ) {
     document.getElementById("result").innerHTML= "If you deposit "+principal+
     ",\<br\> at an interest rate of "+rate+"%"+
     ",\<br\>You will receive an amount of "+amount +
     ",\<br\>in the year "+year+"\<br\>"
     }
+    
 }
 
 function updateRate() 
